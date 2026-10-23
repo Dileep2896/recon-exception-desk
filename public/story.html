@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Why accounting agents need a reconciliation exception desk: evidence, judgment and proof to the cent."
+    />
+    <title>From unmatched to understood — Recon</title>
+    <link rel="icon" href="/favicon.svg" />
+    <link rel="stylesheet" href="/app.css" />
+    <link rel="stylesheet" href="/story.css" />
+  </head>
+  <body>
+    <header class="story-nav">
+      <a href="/" class="brand"
+        ><span class="brand-mark">⇄</span><span>recon</span></a
+      ><span class="story-nav-label">THE CASE FOR AN EXCEPTION DESK</span
+      ><a class="button" href="/#/desk"
+        >Open the desk <span aria-hidden="true">↗</span></a
+      >
+    </header>
+    <main class="story-main">
+      <section class="story-section story-hero" id="domain">
+        <div class="hero-copy reveal">
+          <div class="eyebrow">01 / THE LAST MILE OF THE CLOSE</div>
+          <h1>
+            AI can close<br />the books.<br /><span
+              >Can you trust<br />the close?</span
+            >
+          </h1>
+          <p>
+            AI accounting agents can close the books. Accountants still re-check
+            them. The missing piece is evidence you can follow, and a difference
+            you can explain.
+          </p>
+          <a class="story-text-link" href="#pain"
+            >Follow the evidence <span>↓</span></a
+          >
+        </div>
+        <div
+          class="paper-scene reveal"
+          aria-label="Bank lines and ledger entries coming together"
+        >
+          <div class="paper paper-bank">
+            <div class="paper-head">
+              <span>BANK STATEMENT</span><span>SEP / 26</span>
+            </div>
+            <h3>Cash received.</h3>
+            <div class="paper-line">
+              <span>Payment processor payout</span><span>NET</span>
+            </div>
+            <div class="paper-line">
+              <span>Customer receipt</span><span>IN</span>
+            </div>
+            <div class="paper-line">
+              <span>Wire payment</span><span>OUT</span>
+            </div>
+            <div class="paper-line">
+              <span>Service fee</span><span>OUT</span>
+            </div>
+            <div class="paper-total">One side of the story.</div>
+          </div>
+          <div class="paper paper-ledger">
+            <div class="paper-head">
+              <span>GENERAL LEDGER</span><span>0417</span>
+            </div>
+            <h3>Cash recorded.</h3>
+            <div class="paper-line">
+              <span>Sales receipts</span><span>GROSS</span>
+            </div>
+            <div class="paper-line">
+              <span>Invoice payment</span><span>AR</span>
+            </div>
+            <div class="paper-line">
+              <span>Vendor bill</span><span>AP</span>
+            </div>
+            <div class="paper-line missing-line">
+              <span>Processor fee</span><span>?</span>
+            </div>
+            <div class="paper-total">The other side.</div>
+          </div>
+          <div class="scene-caption">
+            <span class="scene-dot"></span> SAME MONTH. DIFFERENT STORIES.
+          </div>
+        </div>
+        <div class="section-bottom">
+          <span>RECON EXCEPTION DESK</span
+          ><span>AN INDEPENDENT PROJECT · FICTIONAL DATA</span>
+        </div>
+      </section>
+      <section class="story-section pain-section" id="pain">
+        <div class="section-intro reveal">
+          <div class="eyebrow">02 / THE PROBLEM WITH “UNMATCHED”</div>
+          <h2>The agent finishes.<br />The accountant starts over.</h2>
+          <p>
+            A list of differences is not a reconciliation. A 1:1 matcher misses
+            the relationships that explain how money actually moves.
+          </p>
+        </div>
+        <div class="pain-layout">
+          <div class="unmatched-wall reveal">
+            <div class="wall-head">
+              <span>BASELINE OUTPUT</span
+              ><span
+                ><b data-metric="baselineUnexplained">—</b> unexplained
+                lines</span
+              >
+            </div>
+            <div class="unmatched-row">
+              <span>Payment processor net settlement</span><span>Unmatched</span>
+            </div>
+            <div class="unmatched-row">
+              <span>Receipt · Customer 03</span><span>Unmatched</span>
+            </div>
+            <div class="unmatched-row">
+              <span>Check · Vendor 02</span><span>Unmatched</span>
+            </div>
+            <div class="unmatched-row">
+              <span>Monthly service fee</span><span>Unmatched</span>
+            </div>
+            <div class="unmatched-row">
+              <span>Wire · Vendor 01</span><span>Unmatched</span>
+            </div>
+            <div class="wall-bottom">No reason. No owner. No next step.</div>
+          </div>
+          <div class="pain-notes">
+            <article class="pain-note reveal">
+              <span class="note-index">A</span>
+              <div>
+                <h3>Payouts land net of fees.</h3>
+                <p>
+                  One deposit can represent eight receipts and a fee that never
+                  made it into the ledger.
+                </p>
+              </div>
+            </article>
+            <article class="pain-note reveal">
+              <span class="note-index">B</span>
+              <div>
+                <h3>Checks clear next month.</h3>
+                <p>
+                  A timing difference belongs in the tie-out. It should not
+                  become an error to “fix.”
+                </p>
+              </div>
+            </article>
+            <article class="pain-note reveal">
+              <span class="note-index">C</span>
+              <div>
+                <h3>Same amount. Two customers.</h3>
+                <p>
+                  The totals can agree while the allocation remains uncertain.
+                  Guessing is not clearing.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="story-section choice-section" id="decision">
+        <div class="section-intro reveal">
+          <div class="eyebrow">03 / THE PRODUCT DECISION</div>
+          <h2>Build at the point<br />where trust breaks.</h2>
+          <p>
+            Two possible features. One directly addresses the accountant’s
+            decision to sign off.
+          </p>
+        </div>
+        <div class="choice-grid">
+          <article class="choice-card choice-dim reveal">
+            <span class="eyebrow">THE ALTERNATIVE</span>
+            <h3>Missing-document<br />verifier</h3>
+            <p>
+              The chase layer is already common. Verifying files needs
+              extraction we would have to fake.
+            </p>
+            <div class="choice-verdict">
+              Useful, but farther from the decision.
+            </div>
+          </article>
+          <article class="choice-card choice-selected reveal">
+            <span class="eyebrow">THE CHOSEN FEATURE</span>
+            <h3>Recon<br />Exception Desk</h3>
+            <p>
+              On the path to removing the sign-off. Every relationship is
+              deterministic, evidence-backed, and testable to the cent.
+            </p>
+            <div class="choice-verdict">
+              <span>✓</span> Clean candidates move. Exceptions stop.
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="story-section flow-section" id="flow">
+        <div class="section-intro reveal">
+          <div class="eyebrow">04 / FROM UNMATCHED TO UNDERSTOOD</div>
+          <h2>Same inputs.<br />A different kind of output.</h2>
+        </div>
+        <div class="diagram reveal">
+          <svg
+            viewBox="0 0 1000 580"
+            role="img"
+            aria-label="Before: bank and ledger enter a one-to-one matcher, leaving unexplained rows. After: ordered passes clear evidence-backed lines and route reason-coded packets through a tie-out to sign-off."
+          >
+            <defs>
+              <marker
+                id="arrowhead"
+                markerWidth="8"
+                markerHeight="8"
+                refX="6"
+                refY="3"
+                orient="auto"
+              >
+                <path d="M0,0 L6,3 L0,6" />
+              </marker>
+            </defs>
+            <text class="flow-heading" x="26" y="35">BEFORE</text>
+            <g class="before-flow">
+              <rect x="25" y="65" width="130" height="100" rx="8" />
+              <text x="90" y="108">Bank</text>
+              <text x="90" y="132">+ ledger</text>
+              <path class="flow-link" d="M155 115H220" />
+              <rect x="220" y="65" width="170" height="100" rx="8" />
+              <text x="305" y="108">1:1 matcher</text>
+              <text class="flow-small" x="305" y="133">amount + date</text>
+              <path class="flow-link" d="M390 115H455" />
+              <rect
+                class="problem-box"
+                x="455"
+                y="65"
+                width="225"
+                height="100"
+                rx="8"
+              />
+              <text x="568" y="108">
+                <tspan data-metric="baselineUnexplained">—</tspan>
+                unexplained rows
+              </text>
+              <text class="flow-small" x="568" y="133">no reason attached</text>
+              <path class="flow-link" d="M680 115H745" />
+              <rect x="745" y="65" width="225" height="100" rx="8" />
+              <text x="858" y="108">Accountant</text>
+              <text x="858" y="132">rebuilds the work</text>
+            </g>
+            <path class="diagram-divider" d="M25 215H970" />
+            <text class="flow-heading" x="26" y="267">AFTER</text>
+            <g class="after-flow">
+              <rect x="25" y="330" width="130" height="100" rx="8" />
+              <text x="90" y="373">Bank</text>
+              <text x="90" y="397">+ ledger</text>
+              <path class="flow-link live" d="M155 380H220" />
+              <rect x="220" y="330" width="170" height="100" rx="8" />
+              <text x="305" y="373">Ordered passes</text>
+              <text class="flow-small" x="305" y="397">confidence gate</text>
+              <path class="flow-link live" d="M390 380H420V315H455" />
+              <path
+                class="flow-link live packet-path"
+                d="M390 380H420V445H455"
+              />
+              <rect
+                class="clear-box"
+                x="455"
+                y="275"
+                width="225"
+                height="80"
+                rx="8"
+              />
+              <text x="568" y="310">Cleared with basis</text>
+              <text class="flow-small" x="568" y="335">
+                <tspan data-metric="clearGroups">—</tspan>
+                supported groups
+              </text>
+              <rect
+                class="packet-box"
+                x="455"
+                y="405"
+                width="225"
+                height="80"
+                rx="8"
+              />
+              <text x="568" y="440">Reason-coded packets</text>
+              <text class="flow-small" x="568" y="465">
+                <tspan data-metric="packets">—</tspan>
+                decisions + evidence
+              </text>
+              <path class="flow-link live" d="M680 315H710V380H745" />
+              <path class="flow-link live" d="M680 445H710V380H745" />
+              <rect
+                class="proof-box"
+                x="745"
+                y="330"
+                width="225"
+                height="100"
+                rx="8"
+              />
+              <text
+                class="proof-label"
+                x="858"
+                y="370"
+                data-metric="difference"
+              >
+                —
+              </text>
+              <text class="flow-small" x="858" y="398">
+                unexplained · tie-out proof
+              </text>
+              <path class="flow-link live" d="M858 430V480" />
+              <text class="signoff-label" x="858" y="510">
+                Ready for review
+              </text>
+            </g>
+          </svg>
+        </div>
+        <div
+          class="mobile-flow reveal"
+          aria-label="Before and after reconciliation workflow"
+        >
+          <div class="mobile-flow-lane">
+            <h3>BEFORE</h3>
+            <div>Bank + ledger</div>
+            <span>↓</span>
+            <div>1:1 amount / date matcher</div>
+            <span>↓</span>
+            <div class="mobile-problem">
+              <b data-metric="baselineUnexplained">—</b> unexplained rows
+            </div>
+            <span>↓</span>
+            <div>Accountant rebuilds the work</div>
+          </div>
+          <div class="mobile-flow-lane">
+            <h3>AFTER</h3>
+            <div>Bank + ledger</div>
+            <span>↓</span>
+            <div>Ordered passes + confidence gate</div>
+            <span>↓</span>
+            <div class="mobile-cleared">
+              <b data-metric="clearGroups">—</b> groups cleared with basis
+            </div>
+            <div class="mobile-problem">
+              <b data-metric="packets">—</b> reason-coded packets
+            </div>
+            <span>↓</span>
+            <div class="mobile-cleared">
+              <b data-metric="difference">—</b> unexplained
+            </div>
+            <span>↓</span>
+            <div>Ready for review</div>
+          </div>
+        </div>
+        <p class="diagram-caption reveal">
+          No silent ambiguity. No balancing plug. Approval never posts an entry.
+        </p>
+      </section>
+      <section class="story-section impact-section" id="impact">
+        <div class="section-intro reveal">
+          <div class="eyebrow">05 / THE MEASURED DIFFERENCE</div>
+          <h2>Less reconstruction.<br />More informed judgment.</h2>
+          <p id="story-status">
+            Measured on the fictional seed month. Loading live evaluation…
+          </p>
+        </div>
+        <div class="impact-main reveal">
+          <span>SOURCE LINES TO INVESTIGATE</span>
+          <div class="impact-comparison">
+            <strong class="before-number" data-metric="baselineInvestigate"
+              >—</strong
+            ><span class="impact-arrow">→</span
+            ><strong data-metric="engineInvestigate">—</strong>
+          </div>
+          <p>
+            Baseline → exception desk. Related lines become
+            <b data-metric="reviewQueue">—</b> judgment packets, plus
+            <b data-metric="infoPackets">—</b> informational reconciling
+            packets.
+          </p>
+        </div>
+        <div class="impact-grid">
+          <div class="impact-stat reveal">
+            <div class="metric-pair">
+              <span class="old-metric" data-metric="baselineUnexplained">—</span
+              ><span>→</span><strong data-metric="engineUnexplained">—</strong>
+            </div>
+            <h3>Unexplained source lines</h3>
+            <p>Every remaining item has a reason.</p>
+          </div>
+          <div class="impact-stat reveal">
+            <strong data-metric="clearShare">—</strong>
+            <h3>Lines cleared with evidence</h3>
+            <p>Unique relationships. Support attached.</p>
+          </div>
+          <div class="impact-stat reveal">
+            <strong data-metric="difference">—</strong>
+            <h3>Unexplained difference</h3>
+            <p>Every cent attributed to a reason; proposed drafts await approval.</p>
+          </div>
+          <div class="impact-stat reveal">
+            <strong data-metric="accuracy">—</strong>
+            <h3>Accuracy against labels</h3>
+            <p>Every source line. Every reason code.</p>
+          </div>
+        </div>
+        <a href="/#/eval" class="story-text-link reveal"
+          >Inspect the evaluation <span>↗</span></a
+        >
+      </section>
+      <section class="story-section final-section" id="open">
+        <div class="reveal">
+          <div class="eyebrow">06 / THE EVIDENCE IS WAITING</div>
+          <h2>Don’t take<br />the green check<br /><span>on faith.</span></h2>
+          <p>
+            Open a packet. Trace an amount. Read the proposed entry.<br />Then
+            decide for yourself.
+          </p>
+          <div class="story-actions">
+            <a class="button primary" href="/#/desk"
+              >Open the desk <span>↗</span></a
+            ><a class="button" href="/#/tieout"
+              >See the tie-out <span>→</span></a
+            >
+          </div>
+        </div>
+        <div class="final-proof reveal">
+          <span class="proof-symbol">=</span
+          ><span>THE PROPOSED BALANCES TIE.<br />THE EVIDENCE TELLS YOU WHY.</span>
+        </div>
+        <footer class="story-footer">
+          <a href="/">Recon Exception Desk</a
+          ><span>Built with Codex · Independent project</span
+          ><a href="/api/export">Download the workpaper ↗</a>
+        </footer>
+      </section>
+    </main>
+    <script type="module" src="/story.js"></script>
+  </body>
+</html>
