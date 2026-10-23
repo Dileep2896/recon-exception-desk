@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="An evidence-backed bank reconciliation review desk. Clean matches move; exceptions stop."
+    />
+    <title>Recon — Exception Desk</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/app.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "app": "/app.js",
+          "api": "/lib/api.js",
+          "ui": "/lib/ui.js",
+          "router": "/lib/router.js",
+          "desk": "/views/desk.js",
+          "matches": "/views/matches.js",
+          "tieout": "/views/tieout.js",
+          "eval": "/views/eval.js",
+          "audit": "/views/audit.js"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div id="app">
+      <div class="loading-screen">
+        <span class="brand-mark">⇄</span>
+        <p>Preparing your reconciliation…</p>
+      </div>
+    </div>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <dialog id="detail-dialog">
+      <button class="dialog-close button" aria-label="Close dialog">
+        Close ×
+      </button>
+      <div id="dialog-content"></div>
+    </dialog>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
