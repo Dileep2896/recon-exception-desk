@@ -1,0 +1,17 @@
+node_modules/
+.cache/
+.venv/
+dist/
+.env
+.env.*
+!.env.example
+PLAN.md
+RESEARCH.md
+.trailer/
+brag-output/
+coverage/
+test-results/
+playwright-report/
+.DS_Store
+.hallmark/
+.playwright-mcp/
